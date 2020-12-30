@@ -19,8 +19,8 @@ set $mod Mod1
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 0
 
-gaps inner 15
-gaps outer 15
+gaps inner 10
+gaps outer 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -50,7 +50,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -222,3 +222,5 @@ hide_edge_borders both
 # turn on smart borders stuff 
 smart_borders on
 smart_borders no_gaps
+
+exec --no-startup-id "bash $HOME/.fehbg"
