@@ -191,20 +191,20 @@ bindsym $mod+r mode "resize"
 for_window [class="plasmashell"] floating enable
 
 # Don’t spawn an empty window for the Plasma Desktop
-for_window [title="Desktop — Plasma"] kill, floating enable, border none
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
 # other floating stuff
 for_window [class="yakuake"] floating enable
 for_window [class="systemsettings"] floating enable
-for_window [class="plasmashell"] floating enable;
+for_window [class="plasmashell"] floating enable
 for_window [class="Plasma"] floating enable; border none
 for_window [title="plasma-desktop"] floating enable; border none
 for_window [title="win7"] floating enable; border none
-for_window [class="krunner"] floating enable; border none
+for_window [class="krunner"] floating enable; border none; move right 200 px
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
-for_window [class="Code"] floating enable; border none
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 40 ppt, move down 40 ppt
 
 # Don’t let notifications and non-interactive pop-up windows steal focus
 no_focus [class="plasmashell" window_type="notification"]
@@ -213,14 +213,17 @@ no_focus [class="plasmashell" window_type="on_screen_display"]
 
 #bindsym $mod+p exec --no-startup-id "rofi -show run"
 bindsym $mod+Shift+p exec --no-startup-id "rofi -show window"
-bindsym $mod+p exec --no-startup-id "krunner"
+bindsym $mod+p exec --no-startup-id "rofi -show drun -show-icons"
 bindsym --release $mod+Shift+x exec --no-startup-id xkill
 
 for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
 # turn on smart borders stuff 
-smart_borders on
-smart_borders no_gaps
+#smart_borders on
+#smart_borders no_gaps
+#border_radius 7
 
 exec --no-startup-id "bash $HOME/.fehbg"
+exec_always --no-startup-id picom
+exec --no-startup-id "/usr/bin/xeventbind resolution /home/duchs/.fehbg"

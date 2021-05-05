@@ -81,6 +81,8 @@ plugins=(
 	zsh-syntax-highlighting
 	wd
 	kubectl
+	fzf
+	fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,3 +121,12 @@ source ~/.kb_alias
 
 export GOPATH=~/go
 #eval "$(starship init zsh)"
+alias pep='source venv/bin/activate'
+alias op='cd "$HOME/development/`ls $HOME/development | fzf`"'
+alias opc='cd "$HOME/.config/`ls $HOME/.config | fzf`"'
+alias b='bat'
+
+export FZF_DEFAULT_COMMAND='fd'
+export EDITOR='/usr/bin/nvim'
+
+eval $(thefuck --alias)
