@@ -1,6 +1,6 @@
 # Dotfiles
 
-This repo contains my [dotfiles](https://wiki.archlinux.org/title/Dotfiles) and covers a part of my configuration (for now). I'm using [chezmoi](chezmoi.io) as a dotfile manager.
+This repo contains my [dotfiles](https://wiki.archlinux.org/title/Dotfiles) and covers a part of my configuration (for now). I'm using [chezmoi](https://chezmoi.io) as a dotfile manager.
 
 ## Usage
 
