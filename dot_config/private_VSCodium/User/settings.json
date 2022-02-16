@@ -1,0 +1,62 @@
+{
+    "editor.fontFamily": "\"Hack Nerd Font Mono\"",
+    "window.zoomLevel": 2,
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "terminal.integrated.defaultLocation" : "editor",
+    "macros.list": {
+        "moveEditorNewGroupRight": [
+            "workbench.action.newGroupRight",
+            "workbench.action.previousEditor",
+            "workbench.action.moveEditorToRightGroup",
+        ],
+        "moveEditorNewGroupLeft": [
+            "workbench.action.newGroupLeft",
+            "workbench.action.previousEditor",
+            "workbench.action.moveEditorToLeftGroup",
+        ],
+        "moveEditorNewGroupAbove": [
+            "workbench.action.newGroupAbove",
+            "workbench.action.previousEditor",
+            "workbench.action.moveEditorToAboveGroup",
+        ],
+        "moveEditorNewGroupBelow": [
+            "workbench.action.newGroupBelow",
+            "workbench.action.previousEditor",
+            "workbench.action.moveEditorToBelowGroup",
+        ]
+    },
+    "whichkey.bindingOverrides": [
+        {
+            "keys": "w.;",
+            "name": "Move editor to new right group",
+            "type": "command",
+            "command":"macros.moveEditorNewGroupRight",
+        },
+        {
+            "keys": "w.'",
+            "name": "Move editor to new right group",
+            "type": "command",
+            "command":"macros.moveEditorNewGroupRight",
+        },
+        {
+            "keys": "w.[",
+            "name": "Move editor to new above group",
+            "type": "command",
+            "command":"macros.moveEditorNewGroupAbove",
+        },
+        {
+            "keys": "w.]",
+            "name": "Move editor to new below group",
+            "type": "command",
+            "command":"macros.moveEditorNewGroupBelow",
+        },
+        {
+            "keys": "\\",
+            "name": "Open new terminal",
+            "type": "command",
+            "command":"workbench.action.terminal.new"
+        }
+    ],
+    "workbench.sideBar.location": "right",
+    "security.workspace.trust.untrustedFiles": "open"
+}
