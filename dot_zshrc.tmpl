@@ -92,9 +92,13 @@ plugins=(
 	tmux
 	vi-mode
 	terraform
-	suse
 	fzf
 	aliases
+	{{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
+	suse
+	{{- else if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
+	archlinux
+	{{- end }}
 )
 
 source $ZSH/oh-my-zsh.sh
