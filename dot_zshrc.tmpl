@@ -128,7 +128,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias code='codium'
+
 alias pep='source venv/bin/activate'
 alias venv='python -m venv venv && source venv/bin/activate'
 alias ls='exa'
@@ -137,6 +137,7 @@ alias cm='chezmoi'
 {{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
 alias qdbus='qdbus-qt5'
 alias pyenv='CC=clang pyenv'
+alias code='codium'
 {{- end }}
 
 
