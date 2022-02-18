@@ -140,7 +140,7 @@ alias pyenv='CC=clang pyenv'
 {{- end }}
 
 
-export CCP_BASE='development/projects'
+export CCP_BASE='{{ .development_folder }}'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export GITLAB_HOST='gitlab.essent.nl'
 
