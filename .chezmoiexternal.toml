@@ -38,3 +38,8 @@
     url = "https://github.com/Duchadian/zsh-functions/archive/master.tar.gz"
     exact = true
     stripComponents = 1
+    refreshPeriod = "168h"
+[".local/share/rofi/themes"]
+    type = "archive"
+    url = "https://github.com/lr-tech/rofi-themes-collection/archive/master.tar.gz"
+    refreshPeriod = "168h"
