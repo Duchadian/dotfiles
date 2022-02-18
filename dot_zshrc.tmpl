@@ -129,13 +129,16 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias code='codium'
-alias qdbus='qdbus-qt5'
-alias pyenv='CC=clang pyenv'
 alias pep='source venv/bin/activate'
 alias venv='python -m venv venv && source venv/bin/activate'
 alias ls='exa'
 alias awx='awsctx'
 alias cm='chezmoi'
+{{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
+alias qdbus='qdbus-qt5'
+alias pyenv='CC=clang pyenv'
+{{- end }}
+
 
 export CCP_BASE='development/projects'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
