@@ -39,7 +39,7 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-[".local/share/rofi/themes"]
+[".local/share/rofi/themes/rounded-gray-dark.rasi"]
     type = "file"
     url = "https://raw.githubusercontent.com/lr-tech/rofi-themes-collection/master/themes/rounded-gray-dark.rasi"
     refreshPeriod = "168h"
