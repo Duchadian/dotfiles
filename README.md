@@ -21,3 +21,5 @@ age:
 ```
 
 The configuration can be edited either by running `chezmoi edit <file>` on the actual file, or by using `chezmoi cd` and editing the file in the git repo directly.
+
+New edits can be applied on another machine by running `chezmoi update` and `chezmoi apply -v` in succession. 
