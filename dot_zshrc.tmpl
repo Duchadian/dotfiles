@@ -136,6 +136,7 @@ alias awx='awsctx'
 alias cm='chezmoi'
 alias bw_auth='export BW_SESSION=$(bw unlock --passwordfile ~/.bw_auth --raw)'
 alias b='byobu'
+alias hau='ssh pi "cd config && git pull"'
 {{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
 alias qdbus='qdbus-qt5'
 alias pyenv='CC=clang pyenv'
