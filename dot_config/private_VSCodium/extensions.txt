@@ -1,0 +1,11 @@
+asvetliakov.vscode-neovim
+ctf0.macros
+GitLab.gitlab-workflow
+golang.go
+keesschollaart.vscode-home-assistant
+ms-python.python
+ms-toolsai.jupyter
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+redhat.vscode-yaml
+VSpaceCode.whichkey
