@@ -139,6 +139,7 @@ alias bw_auth='export BW_SESSION=$(bw unlock --passwordfile ~/.bw_auth --raw)'
 alias b='byobu'
 alias hau='echo "Updating home assistant repo";ssh pi "cd config && git pull"'
 alias rs='ssh proxmox "zpool status raid"'
+alias cmapply='bw_auth && cm apply -v'
 alias code='codium'
 {{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
 alias qdbus='qdbus-qt5'
