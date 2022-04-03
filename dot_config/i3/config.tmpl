@@ -204,7 +204,8 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
 {{ if eq .chezmoi.hostname "euler" }}
-for_window [class="plasmashell" window_type="notification"] border none, move right 60ppt, move down 10ppt
+for_window [class="plasmashell" window_type="notification"] border none
+#, move left 10ppt, move down 20ppt
 {{- end }}
 {{ if ne .chezmoi.hostname "euler" }}
 for_window [class="plasmashell" window_type="notification"] border none, move right 90ppt, move down 5ppt
