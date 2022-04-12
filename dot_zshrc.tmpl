@@ -141,6 +141,7 @@ alias hau='echo "Updating home assistant repo";ssh pi "cd config && git pull"'
 alias rs='ssh proxmox "zpool status raid"'
 alias cmapply='bw_auth && cm apply -v'
 alias code='codium'
+alias awslocal='aws --endpoint-url=http://localhost:4566 --profile localstack'
 {{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
 alias qdbus='qdbus-qt5'
 alias pyenv='CC=clang pyenv'
