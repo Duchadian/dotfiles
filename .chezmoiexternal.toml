@@ -38,7 +38,7 @@
     url = "https://github.com/Duchadian/zsh-functions/archive/master.tar.gz"
     exact = true
     stripComponents = 1
-    refreshPeriod = "168h"
+    refreshPeriod = "1h"
 [".local/share/rofi/themes/rounded-gray-dark.rasi"]
     type = "file"
     url = "https://raw.githubusercontent.com/lr-tech/rofi-themes-collection/master/themes/rounded-gray-dark.rasi"
