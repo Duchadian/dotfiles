@@ -129,6 +129,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export CCP_BASE='{{ .development_folder }}'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export GITLAB_HOST='{{ (bitwardenFields "item" "Essent Gitlab").url.value }}'
 
 alias pep='source venv/bin/activate'
 alias venv='python -m venv venv && source venv/bin/activate'
@@ -142,15 +145,11 @@ alias rs='ssh proxmox "zpool status raid"'
 alias cmapply='bw_auth && cm apply -v'
 alias code='codium'
 alias awslocal='aws --endpoint-url=http://localhost:4566 --profile localstack'
+alias op='cd $HOME/$CCP_BASE/`/bin/ls $HOME/$CCP_BASE | fzf`'
 {{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
 alias qdbus='qdbus-qt5'
 alias pyenv='CC=clang pyenv'
 {{- end }}
-
-
-export CCP_BASE='{{ .development_folder }}'
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export GITLAB_HOST='gitlab.essent.nl'
 
 for file in $HOME/.config/zsh-functions/*.zsh; do source $file; done
 
