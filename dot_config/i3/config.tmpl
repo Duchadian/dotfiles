@@ -212,6 +212,8 @@ for_window [class="plasmashell" window_type="notification"] border none, move ri
 {{- end }}
 no_focus [class="plasmashell" window_type="notification"]
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
+for_window [class="jetbrains-pycharm" title="win0"] floating enable; border none
+
 
 # using plasma's logout screen instead of i3's
 bindsym $mod+Shift+e exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
