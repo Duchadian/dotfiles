@@ -132,6 +132,8 @@ fi
 export CCP_BASE='{{ .development_folder }}'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export GITLAB_HOST='{{ (bitwardenFields "item" "Essent Gitlab").url.value }}'
+export GITLAB_USER='{{ (bitwarden "item" "Essent Gitlab").login.username }}'
+export GITLAB_TOKEN='{{ (bitwardenFields "item" "Essent Gitlab").pat.value }}'
 
 alias pep='source venv/bin/activate'
 alias venv='python -m venv venv && source venv/bin/activate'
