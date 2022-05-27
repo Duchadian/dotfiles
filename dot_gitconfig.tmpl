@@ -3,6 +3,9 @@
 	name = Tim Voets
 	signingkey = 469324DCA244662E
 
+[commit]
+  gpgsign = true
+
 [includeIf "hasconfig:remote.*.url:{{ (bitwardenFields "item" "Essent Gitlab").git_url.value }}:*/**"]
 	path = ~/.gitconfig-essent
 
