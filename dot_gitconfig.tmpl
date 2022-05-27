@@ -1,0 +1,28 @@
+[user]
+	email = {{ .email }}
+	name = Tim Voets
+	signingkey = 469324DCA244662E
+
+[includeIf "hasconfig:remote.*.url:{{ (bitwardenFields "item" "Essent Gitlab").git_url.value }}:*/**"]
+	path = ~/.gitconfig-essent
+
+[credential]
+	helper = cache --timeout=3600
+
+[pull]
+	rebase = false
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
