@@ -7,10 +7,6 @@ Plug 'itchyny/lightline.vim'
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" jetbrains integration
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'beeender/Comrade'
-
 " bigram search
 Plug 'justinmk/vim-sneak'
 
