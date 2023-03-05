@@ -23,6 +23,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export GPG_TTY=$(tty)
 export CCP_BASE='{{ .development_folder }}'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export GITLAB_HOST='{{ (bitwardenFields "item" "Essent Gitlab").url.value }}'
