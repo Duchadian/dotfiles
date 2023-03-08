@@ -134,7 +134,7 @@ export GITEA_TOKEN='{{ (bitwarden "item" "gitea").login.password }}'
 alias pep='source venv/bin/activate'
 alias venv='python -m venv venv && source venv/bin/activate'
 alias ls='exa'
-alias awx='awsctx'
+alias awx="awsctx && npx 'aws-azure-login'"
 alias cm='chezmoi'
 alias bw_auth='export BW_SESSION=$(bw unlock --passwordfile ~/.bw_auth --raw)'
 alias b='byobu'
