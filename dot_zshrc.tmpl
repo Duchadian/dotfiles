@@ -23,9 +23,7 @@ plugins=(
 	fzf
 	aliases
 	kubectl
-	{{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
-	suse
-	{{- else if eq .chezmoi.osRelease.id "manjaro" }} 
+  {{- if eq .chezmoi.os "linux" }} 
 	archlinux
 	{{- end }}
 )
@@ -73,10 +71,6 @@ alias xc='xclip -selection c'
 alias om='glab mr view -w'
 export AWS_REGION=eu-central-1
 export AWS_DEFAULT_REGION=eu-central-1
-{{- if eq .chezmoi.osRelease.id "opensuse-tumbleweed" }} 
-alias qdbus='qdbus-qt5'
-alias pyenv='CC=clang pyenv'
-{{- end }}
 
 for file in $HOME/.config/zsh-functions/*.zsh; do source $file; done
 
